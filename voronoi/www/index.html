@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--Voronoi Diagram on Google Maps V3-->
+<html>
+	<head>
+		<title>Voronoi Diagram on Google Maps</title>
+		<style type="text/css">
+			html {height:100%}
+			body {height:90%;width:98%;}
+			#googleMap {height:100%;}
+		</style>
+
+		<style type="text/css">
+			.vd_button {
+				-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+				-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+				box-shadow:inset 0px 1px 0px 0px #97c4fe;
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+				background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+				background-color:#3d94f6;
+				-moz-border-radius:9px;
+				-webkit-border-radius:9px;
+				border-radius:9px;
+				border:1px solid #337fed;
+				display:inline-block;
+				color:#ffffff;
+				font-family:Georgia;
+				font-size:16px;
+				font-weight:bold;
+				padding:4px 17px;
+				text-decoration:none;
+				text-shadow:1px 1px 0px #1570cd;
+			}.vd_button:hover {
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+				background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+				background-color:#1e62d0;
+			}.vd_button:active {
+				position:relative;
+				top:1px;
+			}
+		</style>
+
+		<script
+		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAlxeO-fxpnjxcpGynOm_NbUrLVjz4S2oU&sensor=false">
+		</script>
+
+		<script type="text/javascript" src="rhill-voronoi-core.js"></script>
+		<script type="text/javascript" src="voronoi.js"></script>
+	</head>
+
+	<body>
+		<div id="googleMap"></div>
+		<p align = "center"><button onclick="create_voronoi_diagram()" class="vd_button">Create Voronoi Diagram !</button></p>
+	</body>
+</html>
